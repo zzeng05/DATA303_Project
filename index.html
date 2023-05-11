@@ -193,9 +193,9 @@
 
   <div class="row g-5">
     <div class="col-md-8">
+      <article class="Part_1" id="Part_1">
       <h2>Introduction</h2>
       <hr>
-      <article class="blog-post">
         <p>The epidemic has significantly impacted various aspects of society, including housing and eviction policies. It is crucial to understand these changes to inform and improve decision-making for tenants, landlords, and policymakers. This visualization project will explore how the epidemic has affected eviction cases by analyzing docket information collected before and after the epidemic and presenting findings in a clear and accessible manner for a broad audience. Eviction is the legal process by which a landlord removes a tenant from their rental property, usually due to a breach of the lease agreement, non-payment of rent, or the end of the lease term. The eviction process typically involves giving the tenant notice, filing a lawsuit (if necessary), and obtaining a court order for the tenant's removal </p>
 
         
@@ -208,6 +208,8 @@ Legal representation and tenant advocacy: Changes in judgment distribution could
 Economic factors: The epidemic's extensive economic repercussions may have affected tenants' rent-paying ability and landlords' eviction pursuit. Investigating the relationship between eviction cases and the broader economic context can yield valuable insights into judgment distribution changes.
 Public awareness and education: Changes in judgment distribution might be associated with increased public awareness of tenant rights, eviction processes, and available resources during the epidemic. Examining the role of public information campaigns, media coverage, and educational initiatives in eviction case outcomes can help inform future policy and outreach efforts.
 </p>
+        </article>
+        <article class="Part_2" id="Part_2">
         <h2>Data Collection, Cleaning, and Preprocessing</h2>
         <hr>
         <p>Our project is based on the real case information collected in 2022 and 2019 from the Williamsburg & James City County Court docket system. The data collection was primarily targeted at eviction cases (categorized as ‘Unlawful Detainer as shown) in Virginia, and WJCC was only a part of the collection spot. Data may include eviction notices, court filings, and judgments for possession.</p>
@@ -330,7 +332,8 @@ Public awareness and education: Changes in judgment distribution might be associ
     
         <p>The Docket information is cleaned before the visualization: removing N/As, correcting address format, and anonymizing to protect the individual's privacy.</p>
         <p style="padding: 5px;"></p>
-        
+        </article>
+        <article class="Part_3" id="Part_3">
         <h2>Data Visualization</h2>
         <hr>
         <p>A preliminary data analysis is conducted to identify trends, patterns, and potential relationships between variables. This includes comparing judgment distribution among pre and after-epidemic, principal amount distribution, and policy changes pre- and post-epidemic. Details are included below:</p>
@@ -371,6 +374,8 @@ Public awareness and education: Changes in judgment distribution might be associ
                     <li>The similarity in the shape of the time length and principal amount distributions suggests a potential connection. To further validate our hypothesis, it is necessary to examine whether cases with high principal amounts correspond to those with extended continuance durations.</li>
         </ul>
         <p style="padding: 10px;"></p>
+        </article>
+        <article class="Part_4" id="Part_4">
         <h2>Applications and Development:Interactive map of Interaction</h2>
         <hr>
         
@@ -393,6 +398,7 @@ Public awareness and education: Changes in judgment distribution might be associ
           
           In conclusion, this project offers insights into the epidemic's impact on eviction cases, paving the way for future exploration to shape fairer housing policies post-epidemic.
            </p>
+         </article>
         
         
         
@@ -417,10 +423,11 @@ Public awareness and education: Changes in judgment distribution might be associ
         </div>
 
             <select class="form-control" id="visualization-select">
-              <option value="none">--Select a Part--</option>
-              <option value="Part1">Part 1</option>
-              <option value="Part2">Part 2</option>
-             <option value="Part3">Part 3</option>
+              <option value="none">-Select a Part to view-</option>
+              <option value="Part_1">Introduction, Purpose, and Process</option>
+              <option value="Part_2">Data Collection,Cleaning, and Preprocessing</option>
+             <option value="Part_3">Primary Data Visulization</option>
+             <option value="Part_4">Applications and Development</option>
             </select>
       </div>
     </div>
