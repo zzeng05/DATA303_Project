@@ -44,6 +44,9 @@
         display: inline-block;
         margin: 10px;
       }
+      .footnote {
+        font-size: 0.8em;  /* Adjust as necessary */
+      }
 
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
@@ -209,14 +212,122 @@ Public awareness and education: Changes in judgment distribution might be associ
         <hr>
         <p>Our project is based on the real case information collected in 2022 and 2019 from the Williamsburg & James City County Court docket system. The data collection was primarily targeted at eviction cases (categorized as ‘Unlawful Detainer as shown) in Virginia, and WJCC was only a part of the collection spot. Data may include eviction notices, court filings, and judgments for possession.</p>
         <p>A Glance at the Original Data:</p>
-        <div class="framed-image">
-        <img src="glance1.png" alt="glance1" style="width: 95%; height: 70%;" />
+        <table class="table">
+                    <thead>
+                    <tr>
+                    <th>Vriable Name</th>
+                    <th>Type</th>
+                    <th>Example*</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                    <td>Case Number</td>
+                    <td>String</td>
+                    <td>GV1900****-1*</td>
+                    </tr>
+                    <tr>
+                    <td>Filed Date</td>
+                    <td>String</td>
+                    <td>04/29/2019</td>
+                    </tr>
+                    <tr>
+                    <td>Plaintiff Name 1</td>
+                    <td>String</td>
+                    <td>****, Joe</td>
+                    </tr>
+                    <tr>
+                    <td>Plaintiff Address 1</td>
+                    <td>String</td>
+                    <td>WILLIAMSBURG, VA 23188</td>
+                    </tr><tr>
+                    <td>Plaintiff Address 2</td>
+                    <td>String</td>
+                    <td>**** Staffordshire Lane, Williamsburg, VA</td>
+                    </tr><tr>
+                    <td>Attorney</td>
+                    <td>String</td>
+                    <td>Unknown</td>
+                    </tr><tr>
+                    <td>Defendent Name 1</td>
+                    <td>String</td>
+                    <td>****, Linda</td>
+                    </tr><tr>
+                    <td>Defendent Address 1</td>
+                    <td>String</td>
+                    <td>WILLIAMSBURG, VA 23188</td>
+                    </tr><tr>
+                    <td>Defendent Adress 2</td>
+                    <td>String</td>
+                    <td>*** Burton Woods Drive, Williamsburg, VA 23188</td>
+                    </tr><tr>
+                    <td>Hearing Date</td>
+                    <td>String</td>
+                    <td>06/03/2019</td>
+                    </tr><tr>
+                    <td>Time</td>
+                    <td>String</td>
+                    <td>1:30:00 PM</td>
+                    </tr><tr>
+                    <td>Result</td>
+                    <td>String</td>
+                    <td>Default Judgment</td>
+                    </tr>
+                    </tr><tr>
+                    <td>Courtroom</td>
+                    <td>Integer</td>
+                    <td>1</td>
+                    </tr>
+                    </tr>
+                    <tr>
+                    <td>Judgement</td>
+                    <td>String</td>
+                    <td>Plaintiff</td>
+                    </tr>
+                    <tr>
+                    <td>Cost</td>
+                    <td>Float</td>
+                    <td>54.00</td>
+                    </tr>
+                    <tr>
+                    <td>Attorney Fees</td>
+                    <td>Float</td>
+                    <td>205.00</td>
+                    </tr>
+                    <tr>
+                    <td>Principal Amount</td>
+                    <td>Float</td>
+                    <td>815.00</td>
+                    </tr>
+                    <tr>
+                    <td>Other Amount</td>
+                    <td>Float</td>
+                    <td>100.00</td>
+                    </tr>
+                    <tr>
+                    <td>Interest Award</td>
+                    <td>String</td>
+                    <td>6% From 04/29/2019</td>
+                    </tr>
+                    <tr>
+                    <td>Possesion</td>
+                    <td>String</td>
+                    <td>Immediate</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                    <td>Writ of Eviction Issued Date</td>
+                    <td>String</td>
+                    <td>07/19/2019</td>
+                    </tr>
+                    </tfoot>
+                    </table>
+        <div class="footnote">
+          *Original Information are modified in the sheet for privacy reason
         </div>
-        <p>Docket from 201906- 201907</p>
-        <div class="framed-image">
-        <img src="glance2.png" alt="glance2" style="width: 95%; height: 70%;" />
-        </div>
-        <p>Docket from 201906- 201907</p>
+        <p style="padding: 5px;"></p>
+    
         <p>The Docket information is cleaned before the visualization: removing N/As, correcting address format, and anonymizing to protect the individual's privacy.</p>
         <p style="padding: 5px;"></p>
         
